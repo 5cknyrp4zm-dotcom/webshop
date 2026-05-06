@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lizenz – Planpals GmbH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+
+  <!-- Navigation -->
+  <header role="banner">
+    <nav aria-label="Hauptnavigation">
+      <a href="index.html"><span>🐣 Todoly</span></a>
+      <a href="index.html#funktionen">Funktionen</a>
+      <a href="index.html#preise">Preise</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Hauptinhalt -->
+  <main id="main">
+
+    <section class="page-hero">
+      <h1>Lizenzvereinbarung</h1>
+      <p>Bitte lesen Sie diese Vereinbarung sorgfältig durch.</p>
+    </section>
+
+    <section class="legal-content">
+
+      <!-- 1. 구매자 권리 -->
+      <div class="legal-block">
+        <h2>1. Nutzungsrechte des Käufers</h2>
+        <p>Mit dem Kauf eines Abonnements erwirbt der Nutzer folgende Rechte:</p>
+        <ul>
+          <li>✅ Nutzung der Software auf eigenen Geräten</li>
+          <li>✅ Zugang zu allen Funktionen des gewählten Tarifs</li>
+          <li>✅ Nutzung der mobilen App (iOS und Android)</li>
+          <li>✅ Regelmäßige Updates und neue Funktionen</li>
+          <li>✅ Export der eigenen Daten jederzeit möglich</li>
+        </ul>
+      </div>
+
+      <!-- 2. 회사 보유 권리 -->
+      <div class="legal-block">
+        <h2>2. Rechte des Unternehmens</h2>
+        <p>Folgende Rechte verbleiben ausschließlich bei der Planpals GmbH:</p>
+        <ul>
+          <li>🔒 Alle Urheberrechte an der Software</li>
+          <li>🔒 Alle Markenrechte (Todoly, Logo, Formmarke)</li>
+          <li>🔒 Quellcode und technische Architektur</li>
+          <li>🔒 Recht zur Weiterentwicklung der Software</li>
+          <li>🔒 Recht zur Vergabe von Unterlizenzen</li>
+        </ul>
+      </div>
+
+      <!-- 3. 금지 행위 -->
+      <div class="legal-block">
+        <h2>3. Verbotene Handlungen</h2>
+        <p>Dem Nutzer ist ausdrücklich untersagt:</p>
+        <ul>
+          <li>❌ Die Software zu kopieren oder weiterzuverkaufen</li>
+          <li>❌ Den Quellcode zu dekompilieren oder zu verändern</li>
+          <li>❌ Urheberrechtshinweise zu entfernen</li>
+          <li>❌ Die Software für illegale Zwecke zu nutzen</li>
+          <li>❌ Automatisierte Zugriffe (Bots) außerhalb der API</li>
+        </ul>
+      </div>
+
+      <!-- 4. 책임 제한 -->
+      <div class="legal-block warning-block">
+        <h2>4. Haftungsbeschränkung</h2>
+        <p>Die Planpals GmbH haftet nicht für:</p>
+        <ul>
+          <li>⚠️ Datenverlust durch Fehler des Nutzers</li>
+          <li>⚠️ Schäden durch Unterbrechungen des Dienstes</li>
+          <li>⚠️ Indirekte oder mittelbare Schäden</li>
+          <li>⚠️ Schäden durch Drittdienste (z.B. Integrationen)</li>
+        </ul>
+        <p class="note">Die Gesamthaftung ist auf die in den letzten 12 Monaten bezahlten Abonnementgebühren begrenzt. Gesetzlich zwingende Haftungsregelungen bleiben unberührt.</p>
+      </div>
+
+      <!-- 5. 계약 기간 -->
+      <div class="legal-block">
+        <h2>5. Laufzeit und Kündigung</h2>
+        <p>Die Lizenz beginnt mit der Registrierung und endet mit Ablauf des Abonnements oder bei schwerwiegenden Verstößen gegen diese Vereinbarung. Nach Beendigung können eigene Daten noch 30 Tage lang exportiert werden.</p>
+      </div>
+
+      <!-- 6. 준거법 -->
+      <div class="legal-block">
+        <h2>6. Anwendbares Recht</h2>
+        <p>Es gilt österreichisches Recht. Gerichtsstand ist Wien, Österreich.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Fußzeile -->
+  <footer role="contentinfo">
+  <p>© 2025 Planpals GmbH, Wien |
+    <a href="about.html">Über uns</a> |
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a> |
+    <a href="lizenz.html">Lizenz</a> |
+    <a href="kontakt.html">Kontakt</a>
+  </p>
+</footer>
+
+<div id="cookieBanner" class="cookie-banner" role="dialog"
+       aria-label="Cookie-Einstellungen">
+    <p>🍪 Wir verwenden Cookies für ein besseres Erlebnis.
+      <a href="datenschutz.html">Mehr erfahren</a>
+    </p>
+    <div class="cookie-buttons">
+      <button onclick="acceptCookies()" class="btn-solid">Alle akzeptieren</button>
+      <button onclick="declineCookies()" class="btn-outline">Nur notwendige</button>
+    </div>
+  </div>
+
+  <script>
+    if (localStorage.getItem('cookieChoice')) {
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieChoice', 'accepted');
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+    function declineCookies() {
+      localStorage.setItem('cookieChoice', 'declined');
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

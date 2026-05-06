@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – Planpals GmbH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+
+  <!-- Navigation -->
+  <header role="banner">
+    <nav aria-label="Hauptnavigation">
+      <a href="index.html"><span>🐣 Todoly</span></a>
+      <a href="index.html#funktionen">Funktionen</a>
+      <a href="index.html#preise">Preise</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Hauptinhalt -->
+  <main id="main">
+
+    <section class="page-hero">
+      <h1>Kontakt</h1>
+      <p>Wir helfen dir gerne! Schreib uns einfach.</p>
+    </section>
+
+    <section class="kontakt-section">
+
+      <!-- 왼쪽: 회사 정보 -->
+      <div class="kontakt-info">
+        <h2>So erreichst du uns</h2>
+
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <strong>Adresse</strong>
+            <p>Hauptstraße 12/3<br>1010 Wien, Österreich</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📧</div>
+          <div>
+            <strong>E-Mail</strong>
+            <p><a href="mailto:office@planpals.at">office@planpals.at</a></p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <strong>Telefon</strong>
+            <p>+43 1 234 56 78</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">🕐</div>
+          <div>
+            <strong>Bürozeiten</strong>
+            <p>Mo–Fr, 9:00–18:00 Uhr</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 오른쪽: 문의 폼 -->
+      <div class="kontakt-form">
+        <h2>Nachricht senden</h2>
+
+        <form id="contactForm">
+
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name"
+              placeholder="Max Mustermann" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-Mail *</label>
+            <input type="email" id="email" name="email"
+              placeholder="max@beispiel.at" required>
+          </div>
+
+          <div class="form-group">
+            <label for="betreff">Betreff</label>
+            <select id="betreff" name="betreff">
+              <option value="">Bitte wählen…</option>
+              <option value="support">Support</option>
+              <option value="sales">Vertrieb / Pro-Plan</option>
+              <option value="presse">Presse</option>
+              <option value="sonstiges">Sonstiges</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="nachricht">Nachricht *</label>
+            <textarea id="nachricht" name="nachricht"
+              placeholder="Deine Nachricht…" required></textarea>
+          </div>
+
+          <!-- 개인정보 동의 체크박스 -->
+          <div class="form-checkbox">
+            <input type="checkbox" id="datenschutz" name="datenschutz" required>
+            <label for="datenschutz">
+              Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a>
+              gelesen und stimme der Verarbeitung meiner Daten zu. *
+            </label>
+          </div>
+
+          <button type="submit" class="btn-solid">Nachricht senden</button>
+
+        </form>
+
+        <!-- 전송 성공 메시지 (처음엔 숨김) -->
+        <div id="successMsg" class="success-msg">
+          ✅ Danke! Deine Nachricht wurde gesendet. Wir melden uns bald!
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Fußzeile -->
+  <footer role="contentinfo">
+  <p>© 2025 Planpals GmbH, Wien |
+    <a href="about.html">Über uns</a> |
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a> |
+    <a href="lizenz.html">Lizenz</a> |
+    <a href="kontakt.html">Kontakt</a>
+  </p>
+</footer>
+
+  <script>
+    // 폼 제출 처리 (mock)
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    });
+  </script>
+
+<div id="cookieBanner" class="cookie-banner" role="dialog"
+       aria-label="Cookie-Einstellungen">
+    <p>🍪 Wir verwenden Cookies für ein besseres Erlebnis.
+      <a href="datenschutz.html">Mehr erfahren</a>
+    </p>
+    <div class="cookie-buttons">
+      <button onclick="acceptCookies()" class="btn-solid">Alle akzeptieren</button>
+      <button onclick="declineCookies()" class="btn-outline">Nur notwendige</button>
+    </div>
+  </div>
+
+  <script>
+    if (localStorage.getItem('cookieChoice')) {
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieChoice', 'accepted');
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+    function declineCookies() {
+      localStorage.setItem('cookieChoice', 'declined');
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

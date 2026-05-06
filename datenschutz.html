@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutz – Planpals GmbH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+
+  <!-- Navigation -->
+  <header role="banner">
+    <nav aria-label="Hauptnavigation">
+      <a href="index.html"><span>🐣 Todoly</span></a>
+      <a href="index.html#funktionen">Funktionen</a>
+      <a href="index.html#preise">Preise</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Hauptinhalt -->
+  <main id="main">
+
+    <section class="page-hero">
+      <h1>Datenschutzerklärung</h1>
+      <p>Stand: Mai 2025 · Planpals GmbH · gemäß DSGVO</p>
+    </section>
+
+    <section class="legal-content">
+
+      <!-- 1. 책임자 -->
+      <div class="legal-block">
+        <h2>1. Verantwortlicher</h2>
+        <p>
+          <strong>Planpals GmbH</strong><br>
+          Hauptstraße 12/3<br>
+          1010 Wien, Österreich<br>
+          E-Mail: <a href="mailto:datenschutz@planpals.at">datenschutz@planpals.at</a><br>
+          Tel.: +43 1 234 56 78
+        </p>
+      </div>
+
+      <!-- 2. 수집 데이터 -->
+      <div class="legal-block">
+        <h2>2. Welche Daten wir sammeln</h2>
+
+        <h3>2.1 Registrierung</h3>
+        <p>Bei der Kontoerstellung erheben wir: E-Mail-Adresse, Passwort (verschlüsselt), Name (optional). Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
+
+        <h3>2.2 Kontaktformular</h3>
+        <p>Bei Nutzung des Kontaktformulars: Name, E-Mail-Adresse, Nachricht. Zweck: Beantwortung Ihrer Anfrage. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+        <h3>2.3 Zahlungsdaten</h3>
+        <p>Zahlungen werden über <strong>Stripe</strong> abgewickelt. Planpals GmbH speichert keine Kreditkartendaten. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
+
+        <h3>2.4 Cookies</h3>
+        <p>Wir verwenden folgende Cookie-Kategorien:</p>
+        <ul>
+          <li>✅ <strong>Notwendig:</strong> Session-Cookie für die Anmeldung (kein Opt-in erforderlich)</li>
+          <li>📊 <strong>Analyse:</strong> Plausible Analytics – cookielos, DSGVO-konform (nur nach Zustimmung)</li>
+        </ul>
+      </div>
+
+      <!-- 3. 제3자 -->
+      <div class="legal-block">
+        <h2>3. Weitergabe an Dritte</h2>
+        <ul>
+          <li>💳 <strong>Stripe Inc. (USA):</strong> Zahlungsabwicklung – DPF-zertifiziert</li>
+          <li>☁️ <strong>Amazon Web Services (Frankfurt):</strong> Server-Hosting – kein Drittlandstransfer</li>
+          <li>📧 <strong>Postmark (USA):</strong> E-Mail-Versand – DPF-zertifiziert</li>
+        </ul>
+      </div>
+
+      <!-- 4. 사용자 권리 -->
+      <div class="legal-block">
+        <h2>4. Ihre Rechte</h2>
+        <p>Sie haben folgende Rechte gemäß DSGVO:</p>
+        <ul>
+          <li>📋 Recht auf <strong>Auskunft</strong> (Art. 15)</li>
+          <li>✏️ Recht auf <strong>Berichtigung</strong> (Art. 16)</li>
+          <li>🗑️ Recht auf <strong>Löschung</strong> (Art. 17)</li>
+          <li>⏸️ Recht auf <strong>Einschränkung</strong> (Art. 18)</li>
+          <li>📦 Recht auf <strong>Datenübertragbarkeit</strong> (Art. 20)</li>
+          <li>🚫 Recht auf <strong>Widerspruch</strong> (Art. 21)</li>
+        </ul>
+        <p>Anfragen bitte an: <a href="mailto:datenschutz@planpals.at">datenschutz@planpals.at</a></p>
+      </div>
+
+      <!-- 5. 보안 -->
+      <div class="legal-block">
+        <h2>5. Datensicherheit</h2>
+        <p>Alle Verbindungen sind mit TLS 1.3 verschlüsselt. Passwörter werden mit bcrypt gehasht. Regelmäßige Sicherheitsprüfungen werden durchgeführt.</p>
+      </div>
+
+      <!-- 6. 쿠키 -->
+      <div class="legal-block warning-block">
+        <h2>6. Cookie-Einstellungen</h2>
+        <p>Sie können Ihre Cookie-Einstellungen jederzeit ändern. Notwendige Cookies können nicht deaktiviert werden, da die Website sonst nicht funktioniert.</p>
+        <button class="btn-outline" style="margin-top: 12px;" onclick="resetCookies()">Cookie-Einstellungen zurücksetzen</button>
+      </div>
+
+      <!-- 7. 감독기관 -->
+      <div class="legal-block">
+        <h2>7. Beschwerderecht</h2>
+        <p>Sie haben das Recht, Beschwerde bei der österreichischen <strong>Datenschutzbehörde</strong> einzureichen:</p>
+        <p>
+          Datenschutzbehörde<br>
+          Barichgasse 40-42<br>
+          1030 Wien<br>
+          <a href="https://www.dsb.gv.at" target="_blank">www.dsb.gv.at</a>
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Fußzeile -->
+  <footer role="contentinfo">
+  <p>© 2025 Planpals GmbH, Wien |
+    <a href="about.html">Über uns</a> |
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a> |
+    <a href="lizenz.html">Lizenz</a> |
+    <a href="kontakt.html">Kontakt</a>
+  </p>
+</footer>
+
+  <script>
+    function resetCookies() {
+      localStorage.removeItem('cookieChoice');
+      alert('Cookie-Einstellungen wurden zurückgesetzt. Bitte laden Sie die Seite neu.');
+    }
+  </script>
+
+<div id="cookieBanner" class="cookie-banner" role="dialog"
+       aria-label="Cookie-Einstellungen">
+    <p>🍪 Wir verwenden Cookies für ein besseres Erlebnis.
+      <a href="datenschutz.html">Mehr erfahren</a>
+    </p>
+    <div class="cookie-buttons">
+      <button onclick="acceptCookies()" class="btn-solid">Alle akzeptieren</button>
+      <button onclick="declineCookies()" class="btn-outline">Nur notwendige</button>
+    </div>
+  </div>
+
+  <script>
+    if (localStorage.getItem('cookieChoice')) {
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieChoice', 'accepted');
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+    function declineCookies() {
+      localStorage.setItem('cookieChoice', 'declined');
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

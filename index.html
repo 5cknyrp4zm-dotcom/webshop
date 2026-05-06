@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todoly – Planpals GmbH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 접근성: 스킵 링크 -->
+  <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+
+  <!-- Navigation -->
+  <header role="banner">
+    <nav aria-label="Hauptnavigation">
+      <a href="index.html"><span>🐣 Todoly</span></a>
+      <a href="#funktionen">Funktionen</a>
+      <a href="#preise">Preise</a>
+      <a href="about.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- 메인 -->
+  <main id="main">
+
+    <!-- 히어로 -->
+    <section aria-labelledby="hero-title">
+      <h1 id="hero-title">Todoly</h1>
+      <p>Aufgaben verwalten – einfach, schnell und mit Spaß!</p>
+      <a href="#preise" class="btn-hero">Jetzt kostenlos starten</a>
+    </section>
+
+    <!-- 기능 -->
+    <section id="funktionen" aria-labelledby="funktionen-title">
+
+      <h2 id="funktionen-title">Unsere Funktionen</h2>
+      <p>Alles, was du für deinen Alltag brauchst.</p>
+
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">✅</div>
+          <h3>Aufgabenliste</h3>
+          <p>Erstelle und verwalte deine Aufgaben – jederzeit und überall.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🔔</div>
+          <h3>Erinnerungen</h3>
+          <p>Verpasse keine Deadline mehr. Todoly erinnert dich rechtzeitig.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">👥</div>
+          <h3>Team-Sharing</h3>
+          <p>Teile Aufgaben mit deinem Team und arbeitet gemeinsam effizienter.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📊</div>
+          <h3>Statistiken</h3>
+          <p>Verfolge deinen Fortschritt mit übersichtlichen Berichten.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 가격 -->
+    <section id="preise" aria-labelledby="preise-title">
+
+      <h2 id="preise-title">Unsere Preise</h2>
+      <p>Einfach und transparent – ohne versteckte Kosten.</p>
+
+      <div class="pricing">
+
+        <div class="pricing-card">
+          <h3>Free</h3>
+          <div class="price">€ 0 <span>/ Monat</span></div>
+          <ul>
+            <li>✅ Bis zu 10 Aufgaben</li>
+            <li>✅ Erinnerungen</li>
+            <li>✅ Mobile App</li>
+            <li>❌ Team-Sharing</li>
+            <li>❌ Statistiken</li>
+          </ul>
+          <a href="kontakt.html" class="btn-outline">Kostenlos starten</a>
+        </div>
+
+        <div class="pricing-card pricing-featured">
+          <div class="badge">Empfohlen</div>
+          <h3>Pro</h3>
+          <div class="price">€ 4,99 <span>/ Monat</span></div>
+          <ul>
+            <li>✅ Unbegrenzte Aufgaben</li>
+            <li>✅ Erinnerungen</li>
+            <li>✅ Mobile App</li>
+            <li>✅ Team-Sharing</li>
+            <li>✅ Statistiken</li>
+          </ul>
+          <a href="kontakt.html" class="btn-solid">Jetzt upgraden</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 푸터 -->
+  <footer role="contentinfo">
+    <p>© 2025 Planpals GmbH, Wien |
+      <a href="about.html">Über uns</a> |
+      <a href="impressum.html">Impressum</a> |
+      <a href="datenschutz.html">Datenschutz</a> |
+      <a href="lizenz.html">Lizenz</a> |
+      <a href="kontakt.html">Kontakt</a>
+    </p>
+  </footer>
+
+  <!-- 쿠키 배너 -->
+  <div id="cookieBanner" class="cookie-banner" role="dialog"
+       aria-label="Cookie-Einstellungen">
+    <p>🍪 Wir verwenden Cookies für ein besseres Erlebnis.
+      <a href="datenschutz.html">Mehr erfahren</a>
+    </p>
+    <div class="cookie-buttons">
+      <button onclick="acceptCookies()" class="btn-solid">Alle akzeptieren</button>
+      <button onclick="declineCookies()" class="btn-outline">Nur notwendige</button>
+    </div>
+  </div>
+
+  <script>
+    // 쿠키 배너
+    if (localStorage.getItem('cookieChoice')) {
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieChoice', 'accepted');
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+    function declineCookies() {
+      localStorage.setItem('cookieChoice', 'declined');
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

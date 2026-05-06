@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum – Planpals GmbH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+
+  <!-- Navigation -->
+  <header role="banner">
+    <nav aria-label="Hauptnavigation">
+      <a href="index.html"><span>🐣 Todoly</span></a>
+      <a href="index.html#funktionen">Funktionen</a>
+      <a href="index.html#preise">Preise</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Hauptinhalt -->
+  <main id="main">
+
+    <section class="page-hero">
+      <h1>Impressum</h1>
+      <p>gemäß § 24 Mediengesetz und § 5 ECG (Österreich)</p>
+    </section>
+
+    <section class="legal-content">
+
+      <!-- 미디어 소유자 -->
+      <div class="legal-block">
+        <h2>Medieninhaber und Dienstanbieter</h2>
+        <p>
+          <strong>Planpals GmbH</strong><br>
+          Hauptstraße 12/3<br>
+          1010 Wien, Österreich
+        </p>
+      </div>
+
+      <!-- 연락처 -->
+      <div class="legal-block">
+        <h2>Kontakt</h2>
+        <table class="info-table">
+          <tr>
+            <td>📧 E-Mail</td>
+            <td><a href="mailto:office@planpals.at">office@planpals.at</a></td>
+          </tr>
+          <tr>
+            <td>📞 Telefon</td>
+            <td>+43 1 234 56 78</td>
+          </tr>
+          <tr>
+            <td>🌐 Website</td>
+            <td>www.planpals.at</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- 회사 정보 -->
+      <div class="legal-block">
+        <h2>Unternehmensangaben</h2>
+        <table class="info-table">
+          <tr>
+            <td>⚖️ Rechtsform</td>
+            <td>Gesellschaft mit beschränkter Haftung (GmbH)</td>
+          </tr>
+          <tr>
+            <td>📋 Firmenbuchnummer</td>
+            <td>598821 b (Handelsgericht Wien)</td>
+          </tr>
+          <tr>
+            <td>🔢 UID-Nummer</td>
+            <td>ATU99887766</td>
+          </tr>
+          <tr>
+            <td>🏛️ Aufsichtsbehörde</td>
+            <td>Magistratisches Bezirksamt, 1010 Wien</td>
+          </tr>
+          <tr>
+            <td>💼 Gewerbe</td>
+            <td>Softwareentwicklung und -vertrieb</td>
+          </tr>
+          <tr>
+            <td>📜 Vorschriften</td>
+            <td>Gewerbeordnung 1994 (GewO)</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- 대표자 -->
+      <div class="legal-block">
+        <h2>Geschäftsführung</h2>
+        <p>Max Mustermann (Geschäftsführer)</p>
+      </div>
+
+      <!-- 미디어 방향성 -->
+      <div class="legal-block">
+        <h2>Grundlegende Richtung</h2>
+        <p>Dieses Online-Medium dient der Präsentation und dem Vertrieb der Software-Produkte der Planpals GmbH sowie der Information von Interessenten und Kunden.</p>
+      </div>
+
+      <!-- 저작권 -->
+      <div class="legal-block">
+        <h2>Urheberrecht</h2>
+        <p>© 2022–2025 Planpals GmbH. Alle Inhalte dieser Website (Texte, Grafiken, Marken, Logos) sind urheberrechtlich geschützt. Jede Verwendung ohne vorherige schriftliche Zustimmung ist untersagt.</p>
+      </div>
+
+      <!-- 책임 면제 -->
+      <div class="legal-block warning-block">
+        <h2>Haftungsausschluss</h2>
+        <p>Trotz sorgfältiger Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt verlinkter Seiten sind ausschließlich deren Betreiber verantwortlich. Alle Angaben ohne Gewähr.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Fußzeile -->
+<footer role="contentinfo">
+  <p>© 2025 Planpals GmbH, Wien |
+    <a href="about.html">Über uns</a> |
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a> |
+    <a href="lizenz.html">Lizenz</a> |
+    <a href="kontakt.html">Kontakt</a>
+  </p>
+</footer>
+
+<div id="cookieBanner" class="cookie-banner" role="dialog"
+       aria-label="Cookie-Einstellungen">
+    <p>🍪 Wir verwenden Cookies für ein besseres Erlebnis.
+      <a href="datenschutz.html">Mehr erfahren</a>
+    </p>
+    <div class="cookie-buttons">
+      <button onclick="acceptCookies()" class="btn-solid">Alle akzeptieren</button>
+      <button onclick="declineCookies()" class="btn-outline">Nur notwendige</button>
+    </div>
+  </div>
+
+  <script>
+    if (localStorage.getItem('cookieChoice')) {
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieChoice', 'accepted');
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+    function declineCookies() {
+      localStorage.setItem('cookieChoice', 'declined');
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
