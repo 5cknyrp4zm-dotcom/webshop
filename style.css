@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
 /* 기본 설정 */
 * {
   margin: 0;
@@ -6,7 +8,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Nunito', sans-serif;
   background-color: #fffdf7;
   color: #333;
 }
@@ -726,4 +728,50 @@ footer a:hover {
   font-size: 13px;
   color: #888;
   line-height: 1.5;
+}
+/* 히어로 애니메이션 */
+.hero-animation {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.anim-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 14px 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  font-size: 15px;
+  font-weight: 600;
+  color: #2d2d2d;
+  animation: slideIn 0.6s ease both;
+  width: 280px;
+}
+
+.anim-card-2 {
+  animation-delay: 0.3s;
+  opacity: 0;
+  animation: slideIn 0.6s 0.3s ease both;
+}
+
+.anim-card-3 {
+  animation-delay: 0.6s;
+  opacity: 0;
+  animation: slideIn 0.6s 0.6s ease both;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
